@@ -10,5 +10,5 @@
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "ignore": ["supabase-payload"]
 }
