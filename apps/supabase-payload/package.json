@@ -1,6 +1,7 @@
 {
   "name": "supabase-payload",
   "version": "1.0.1",
+  "private": true,
   "description": "A blank template to get started with Payload 3.0",
   "license": "MIT",
   "type": "module",
