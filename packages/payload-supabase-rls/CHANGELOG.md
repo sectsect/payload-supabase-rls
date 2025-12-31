@@ -1,5 +1,12 @@
 # @sect/payload-supabase-rls
 
+## 0.1.3
+
+### Patch Changes
+
+- [#5](https://github.com/sectsect/payload-supabase-rls/pull/5) [`fc6c4c7`](https://github.com/sectsect/payload-supabase-rls/commit/fc6c4c7962dd8f1dfc42f7d6146e06071fc18ce6) Thanks [@sectsect](https://github.com/sectsect)! - .
+  - docs: update README.md
+
 ## 0.1.2
 
 ### Patch Changes
