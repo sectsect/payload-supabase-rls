@@ -1,6 +1,6 @@
 {
   "name": "@sect/payload-supabase-rls",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Automated Row-Level Security (RLS) management for Supabase PostgreSQL, designed for PayloadCMS and other ORMs",
   "license": "MIT",
   "author": "sect",
