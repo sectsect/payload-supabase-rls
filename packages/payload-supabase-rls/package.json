@@ -1,0 +1,122 @@
+{
+  "name": "@sect/payload-supabase-rls",
+  "version": "0.1.0",
+  "description": "Automated Row-Level Security (RLS) management for Supabase PostgreSQL, designed for PayloadCMS and other ORMs",
+  "license": "MIT",
+  "author": "sect",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sectsect/payload-supabase-rls.git"
+  },
+  "homepage": "https://github.com/sectsect/payload-supabase-rls#readme",
+  "bugs": {
+    "url": "https://github.com/sectsect/payload-supabase-rls/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "bin"
+  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/types/index.d.ts",
+  "bin": {
+    "payload-supabase-rls": "./bin/payload-supabase-rls.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js"
+    },
+    "./core": {
+      "types": "./dist/types/core/index.d.ts",
+      "import": "./dist/esm/core/index.js",
+      "require": "./dist/cjs/core/index.js"
+    },
+    "./integrations/payload": {
+      "types": "./dist/types/integrations/payload/index.d.ts",
+      "import": "./dist/esm/integrations/payload/index.js",
+      "require": "./dist/cjs/integrations/payload/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "dev": "tsc --watch --project tsconfig.build.json",
+    "build": "rm -rf dist && tsc --project tsconfig.build.json && tsc --project tsconfig.build.json --module commonjs --outDir dist/cjs",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "coverage": "vitest run --coverage",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "type-check": "tsc --noEmit --pretty",
+    "type-check:watch": "tsc --noEmit --pretty --watch",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "@eslint-react/eslint-plugin": "^1.49.0",
+    "@eslint/compat": "^1.1.1",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.26.0",
+    "@next/eslint-plugin-next": "^15.3.9",
+    "@tanstack/eslint-plugin-query": "^5.51.1",
+    "@types/node": "^20.12.12",
+    "@types/pg": "^8.11.10",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "@vitest/coverage-v8": "^4.0.9",
+    "@vitest/eslint-plugin": "^1.3.25",
+    "dotenv": "^16.4.5",
+    "eslint": "^8.57.1",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-typescript": "^18.0.0",
+    "eslint-config-next": "^15.3.9",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-deprecation": "^3.0.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.4.0",
+    "eslint-plugin-react": "^7.35.0",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "eslint-plugin-tailwindcss": "^3.18.2",
+    "eslint-plugin-testing-library": "^7.1.1",
+    "eslint-plugin-tsdoc": "^0.4.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "eslint-plugin-vitest": "^0.5.4",
+    "globals": "^16.5.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.9"
+  },
+  "peerDependencies": {
+    "payload": "^3.0.0"
+  },
+  "peerDependenciesMeta": {
+    "payload": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "supabase",
+    "postgresql",
+    "postgres",
+    "rls",
+    "row-level-security",
+    "payloadcms",
+    "payload",
+    "orm",
+    "drizzle",
+    "security",
+    "database",
+    "cli"
+  ]
+}

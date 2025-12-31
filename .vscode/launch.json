@@ -1,0 +1,44 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Next.js: Chrome (supabase-payload)",
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}/apps/supabase-payload",
+      "sourceMapPathOverrides": {
+        "webpack:///./*": "${workspaceFolder}/apps/supabase-payload/*"
+      }
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Next.js: Node (supabase-payload)",
+      "program": "${workspaceFolder}/apps/supabase-payload/node_modules/.bin/next",
+      "args": ["dev"],
+      "cwd": "${workspaceFolder}/apps/supabase-payload",
+      "autoAttachChildProcesses": true,
+      "skipFiles": ["<node_internals>/**"],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Vitest: payload-supabase-rls",
+      "program": "${workspaceFolder}/packages/payload-supabase-rls/node_modules/.bin/vitest",
+      "args": ["run"],
+      "cwd": "${workspaceFolder}/packages/payload-supabase-rls",
+      "console": "integratedTerminal"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Next.js: Full (supabase-payload)",
+      "configurations": [
+        "Next.js: Node (supabase-payload)",
+        "Next.js: Chrome (supabase-payload)"
+      ]
+    }
+  ]
+}
