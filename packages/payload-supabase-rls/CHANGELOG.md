@@ -1,5 +1,12 @@
 # @sect/payload-supabase-rls
 
+## 0.1.2
+
+### Patch Changes
+
+- [`929f99c`](https://github.com/sectsect/payload-supabase-rls/commit/929f99ced36644b4285e3ef0b0d302d8e73512dd) Thanks [@sectsect](https://github.com/sectsect)! - .
+  - fix(changeset): prevent demo app from being published to npm
+
 ## 0.1.1
 
 ### Patch Changes
