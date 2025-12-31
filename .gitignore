@@ -22,6 +22,11 @@ lerna-debug.log*
 coverage/
 .nyc_output/
 
+# Codecov uploader and integrity signatures
+codecov
+codecov.SHA256SUM
+codecov.SHA256SUM.sig
+
 # IDE
 ### VisualStudioCode ###
 .vscode/*
