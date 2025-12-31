@@ -1,5 +1,7 @@
 # @sect/payload-supabase-rls
 
+[![Release](https://github.com/sectsect/payload-supabase-rls/actions/workflows/release.yml/badge.svg)](https://github.com/sectsect/payload-supabase-rls/actions/workflows/release.yml) [![codecov](https://codecov.io/gh/sectsect/payload-supabase-rls/graph/badge.svg?token=ovMJyAl0aY)](https://codecov.io/gh/sectsect/payload-supabase-rls) [![CodeQL](https://github.com/sectsect/payload-supabase-rls/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/sectsect/payload-supabase-rls/actions/workflows/github-code-scanning/codeql)
+
 Automated Row-Level Security (RLS) management for Supabase PostgreSQL, designed for PayloadCMS and other ORMs.
 
 ## ⚠️ Experimental Status
