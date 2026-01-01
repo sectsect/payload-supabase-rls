@@ -21,13 +21,12 @@
     "rls:status": "payload-supabase-rls status"
   },
   "dependencies": {
-    "@sect/payload-supabase-rls": "workspace:*",
     "@atelier-disko/payload-lexical-react-renderer": "^1.0.4",
     "@payloadcms/db-postgres": "^3.69.0",
     "@payloadcms/next": "^3.69.0",
-    "@payloadcms/plugin-cloud": "^3.0.2",
     "@payloadcms/richtext-lexical": "^3.69.0",
     "@payloadcms/storage-s3": "^3.69.0",
+    "@sect/payload-supabase-rls": "workspace:*",
     "clsx": "^2.1.1",
     "cross-env": "^7.0.3",
     "dayjs": "^1.11.11",
