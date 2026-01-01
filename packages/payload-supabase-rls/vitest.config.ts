@@ -16,7 +16,7 @@ export default defineConfig({
       exclude: [
         'node_modules/',
         'dist/',
-        'tests/fixtures/',
+        'src/__tests__/fixtures/',
         '**/*.test.ts',
         '**/*.config.ts',
       ],
