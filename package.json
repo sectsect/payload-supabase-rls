@@ -7,6 +7,7 @@
     "dev": "turbo dev --cache=local:,remote: --continue",
     "test": "turbo test",
     "test:watch": "turbo test:watch",
+    "test:ui": "turbo test:ui",
     "coverage": "turbo coverage",
     "lint": "turbo lint",
     "lint:fix": "turbo lint:fix",

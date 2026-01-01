@@ -18,6 +18,9 @@
     "test:watch": {
       "cache": false
     },
+    "test:ui": {
+      "cache": false
+    },
     "coverage": {
       "dependsOn": ["^build"],
       "outputs": ["coverage/**"]
