@@ -1,5 +1,15 @@
 # @sect/payload-supabase-rls
 
+## 0.1.4
+
+### Patch Changes
+
+- [`c389b67`](https://github.com/sectsect/payload-supabase-rls/commit/c389b67ce240d5ddf76ef20d78c48ce6308f1e43) Thanks [@sectsect](https://github.com/sectsect)! - .
+  - ci(deps): support codecov/codecov-action action to v5
+  - chore(test): add Vitest UI support for interactive testing
+  - chore: remove unwanted package
+  - refactor(test): migrate tests to src/**tests** and enforce eslint rules
+
 ## 0.1.3
 
 ### Patch Changes
