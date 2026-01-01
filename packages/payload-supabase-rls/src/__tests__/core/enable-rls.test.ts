@@ -68,7 +68,7 @@ describe('enableRLS', () => {
 
     test('should return error when connectionString is undefined', async () => {
       const result = await enableRLS({
-        connectionString: undefined as unknown,
+        connectionString: undefined as unknown as string,
       });
 
       expect(result).toEqual({
