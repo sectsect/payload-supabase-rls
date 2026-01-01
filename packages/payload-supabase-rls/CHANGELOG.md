@@ -1,5 +1,12 @@
 # @sect/payload-supabase-rls
 
+## 0.1.5
+
+### Patch Changes
+
+- [#10](https://github.com/sectsect/payload-supabase-rls/pull/10) [`7f67189`](https://github.com/sectsect/payload-supabase-rls/commit/7f6718910ec086cc9387aef4f00892687bed55a8) Thanks [@sectsect](https://github.com/sectsect)! - .
+  - fix(test): resolve TypeScript strict mode errors
+
 ## 0.1.4
 
 ### Patch Changes
