@@ -83,16 +83,16 @@ describe('validators', () => {
       });
 
       test('should reject non-string inputs', () => {
-        expect(() => validatePattern(123 as unknown)).toThrow(
+        expect(() => validatePattern(123 as unknown as string)).toThrow(
           /must be a string/,
         );
-        expect(() => validatePattern(null as unknown)).toThrow(
+        expect(() => validatePattern(null as unknown as string)).toThrow(
           /must be a string/,
         );
-        expect(() => validatePattern(undefined as unknown)).toThrow(
+        expect(() => validatePattern(undefined as unknown as string)).toThrow(
           /must be a string/,
         );
-        expect(() => validatePattern({} as unknown)).toThrow(
+        expect(() => validatePattern({} as unknown as string)).toThrow(
           /must be a string/,
         );
       });
@@ -274,14 +274,14 @@ describe('validators', () => {
       });
 
       test('should reject non-string inputs', () => {
-        expect(() => validateIdentifier(123 as unknown, 'schema')).toThrow(
-          /must be a string/,
-        );
-        expect(() => validateIdentifier(null as unknown, 'schema')).toThrow(
-          /must be a string/,
-        );
         expect(() =>
-          validateIdentifier(undefined as unknown, 'schema'),
+          validateIdentifier(123 as unknown as string, 'schema'),
+        ).toThrow(/must be a string/);
+        expect(() =>
+          validateIdentifier(null as unknown as string, 'schema'),
+        ).toThrow(/must be a string/);
+        expect(() =>
+          validateIdentifier(undefined as unknown as string, 'schema'),
         ).toThrow(/must be a string/);
       });
 
@@ -331,13 +331,13 @@ describe('validators', () => {
       });
 
       test('should reject non-array inputs', () => {
-        expect(() => validatePatterns('not_an_array' as unknown)).toThrow(
+        expect(() =>
+          validatePatterns('not_an_array' as unknown as string[]),
+        ).toThrow(/must be an array/);
+        expect(() => validatePatterns(null as unknown as string[])).toThrow(
           /must be an array/,
         );
-        expect(() => validatePatterns(null as unknown)).toThrow(
-          /must be an array/,
-        );
-        expect(() => validatePatterns(123 as unknown)).toThrow(
+        expect(() => validatePatterns(123 as unknown as string[])).toThrow(
           /must be an array/,
         );
       });
@@ -380,13 +380,15 @@ describe('validators', () => {
       });
 
       test('should reject non-array inputs', () => {
-        expect(() => validateRoles('not_an_array' as unknown)).toThrow(
+        expect(() =>
+          validateRoles('not_an_array' as unknown as string[]),
+        ).toThrow(/must be an array/);
+        expect(() => validateRoles(null as unknown as string[])).toThrow(
           /must be an array/,
         );
-        expect(() => validateRoles(null as unknown)).toThrow(
+        expect(() => validateRoles(123 as unknown as string[])).toThrow(
           /must be an array/,
         );
-        expect(() => validateRoles(123 as unknown)).toThrow(/must be an array/);
       });
     });
   });
