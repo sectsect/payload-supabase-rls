@@ -1,5 +1,12 @@
 # @sect/payload-supabase-rls
 
+## 0.1.6
+
+### Patch Changes
+
+- [#12](https://github.com/sectsect/payload-supabase-rls/pull/12) [`64114f4`](https://github.com/sectsect/payload-supabase-rls/commit/64114f41c48c67711484962e34ebd0c77ebab816) Thanks [@sectsect](https://github.com/sectsect)! - .
+  - chore(deps): update dependencies
+
 ## 0.1.5
 
 ### Patch Changes
